@@ -6,7 +6,8 @@ radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
     cas = control.millis()
 })
 RunComp.OnLightDrop(function on_light_drop() {
-    let cas = control.millis()
-    control.reset()
+    
+    cas = control.millis()
     basic.showNumber(cas)
+    control.reset()
 })
