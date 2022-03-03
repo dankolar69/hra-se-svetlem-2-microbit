@@ -10,6 +10,7 @@ radio.on_received_number(on_received_number)
 def on_light_drop():
     global cas
     cas = control.millis()
+    cas = cas/1000
     basic.show_number(cas)
     control.reset()
 RunComp.on_light_drop(on_light_drop)

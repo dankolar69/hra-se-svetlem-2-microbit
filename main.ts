@@ -8,6 +8,7 @@ radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
 RunComp.OnLightDrop(function on_light_drop() {
     
     cas = control.millis()
+    cas = cas / 1000
     basic.showNumber(cas)
     control.reset()
 })
