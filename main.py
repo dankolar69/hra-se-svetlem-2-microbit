@@ -8,6 +8,11 @@ def on_received_number(receivedNumber):
 radio.on_received_number(on_received_number)
 
 def on_light_drop():
+    cas = control.millis()
+    control.reset()
+    basic.show_number(cas)
+    
+RunComp.on_light_drop(on_light_drop)
 
     
         
